@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gregory Garro | Scale Architect - Optimización Sistémica de Negocios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#f59e0b',
+                            goldDark: '#b45309',
+                            slate950: '#020617',
+                            slate900: '#0f172a',
+                            slate800: '#1e293b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(245, 158, 11, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.1) 0%, rgba(2, 6, 23, 1) 70%);
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+    </style>
+</head>
+<body class="bg-brand-slate950 text-slate-200 font-sans selection:bg-brand-gold selection:text-brand-slate950">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-extrabold tracking-tighter text-white">GREGORY<span class="text-brand-gold">GARRO</span></span>
+                <span class="hidden md:block h-4 w-[1px] bg-white/20"></span>
+                <span class="hidden md:block text-[10px] uppercase tracking-[0.3em] font-light text-slate-400">Scale Architect</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#dolores" class="hover:text-brand-gold transition-colors italic uppercase tracking-wider">Análisis</a>
+                <a href="#metodo" class="hover:text-brand-gold transition-colors italic uppercase tracking-wider">Metodología</a>
+                <a href="#oferta" class="hover:text-brand-gold transition-colors italic uppercase tracking-wider">Scale Foundations</a>
+            </div>
+            <a href="#contacto" class="bg-brand-gold hover:bg-brand-goldDark text-brand-slate950 px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105">
+                Diagnosticar mi negocio
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center pt-20 hero-gradient overflow-hidden">
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-gold rounded-full filter blur-[120px]"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/20 text-brand-gold text-xs font-bold uppercase tracking-widest">
+                    <span>Optimización Sistémica Multivariable</span>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-white leading-[1.1] text-balance">
+                    Construye un <span class="text-brand-gold italic">sistema</span>,<br>no un auto-empleo.
+                </h1>
+                <p class="text-xl text-slate-400 leading-relaxed max-w-xl">
+                    Transformamos negocios maduros estancados en activos replicables mediante rigor administrativo y arquitectura estratégica pura. Es hora de blindar tu escala.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto" class="bg-brand-gold text-brand-slate950 px-8 py-4 rounded-xl text-lg font-bold hover:bg-white transition-all flex items-center justify-center space-x-3 shadow-lg shadow-brand-gold/20">
+                        <span>Diagnosticar mi negocio</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#metodo" class="border border-white/10 hover:bg-white/5 px-8 py-4 rounded-xl text-lg font-semibold transition-all flex items-center justify-center">
+                        Ver Metodología
+                    </a>
+                </div>
+                <div class="pt-8 flex items-center space-x-6 text-slate-500 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-check text-brand-gold"></i>
+                        <span>Independencia Operativa</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-check text-brand-gold"></i>
+                        <span>Blindaje Estructural</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative hidden lg:block">
+                <div class="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-slate950 to-transparent"></div>
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" alt="Arquitectura Corporativa" class="w-full h-[600px] object-cover">
+                    <div class="absolute bottom-10 left-10 right-10 p-6 glass rounded-xl border-l-4 border-l-brand-gold">
+                        <p class="text-lg font-medium text-white italic">"La madurez de un negocio se mide por su capacidad de funcionar sin la presencia de su creador."</p>
+                        <p class="mt-2 text-sm text-brand-gold font-bold uppercase tracking-tighter">Gregory Garro — Scale Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pain Points Section -->
+    <section id="dolores" class="py-32 bg-brand-slate900">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-20">
+            <h2 class="text-brand-gold uppercase tracking-[.3em] font-bold text-sm mb-4">Análisis de Estancamiento</h2>
+            <h3 class="text-4xl lg:text-5xl font-extrabold text-white">Los Síntomas de la Inercia Madura</h3>
+            <p class="mt-6 text-slate-400 max-w-2xl mx-auto">Cuando un negocio alcanza la madurez, surgen patologías invisibles que consumen al dueño y frenan la rentabilidad real.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- P1 -->
+            <div class="glass p-8 rounded-2xl group hover:border-brand-gold/50 transition-all">
+                <div class="w-12 h-12 bg-red-500/10 border border-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-link-slash text-red-500"></i>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-4">Esclavitud Operativa</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Te has convertido en el engranaje central. Si dejas de pedalear, el motor se detiene. No tienes una empresa, tienes un auto-empleo de alta responsabilidad.</p>
+            </div>
+            <!-- P2 -->
+            <div class="glass p-8 rounded-2xl group hover:border-brand-gold/50 transition-all">
+                <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-arrow-up-right-dots text-brand-gold"></i>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-4">Estancamiento Invisible</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Has llegado al techo de cristal. El crecimiento se ha detenido y no es por falta de ventas, sino por la incapacidad de gestionar la inercia actual.</p>
+            </div>
+            <!-- P3 -->
+            <div class="glass p-8 rounded-2xl group hover:border-brand-gold/50 transition-all">
+                <div class="w-12 h-12 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-shield-halved text-blue-500"></i>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-4">Vulnerabilidad Estructural</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">El desorden legal y administrativo es una bomba de tiempo. Sin procesos blindados, el riesgo operativo amenaza tu patrimonio personal cada día.</p>
+            </div>
+            <!-- P4 -->
+            <div class="glass p-8 rounded-2xl group hover:border-brand-gold/50 transition-all">
+                <div class="w-12 h-12 bg-purple-500/10 border border-purple-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-copy text-purple-500"></i>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-4">Éxito No Replicable</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Tus mejores resultados dependen del azar o del talento individual, no de Playbooks. Sin procesos repetibles, la escala es una fantasía peligrosa.</p>
+            </div>
+            <!-- P5 -->
+            <div class="glass p-8 rounded-2xl group hover:border-brand-gold/50 transition-all">
+                <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-eye-slash text-emerald-500"></i>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-4">Ceguera de Gestión</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Falta de trazabilidad financiera en tiempo real. Tomas decisiones basadas en sensaciones y no en datos críticos. No ves por dónde se fuga la rentabilidad.</p>
+            </div>
+            <!-- CTA -->
+            <div class="bg-brand-gold p-8 rounded-2xl flex flex-col justify-center items-center text-center">
+                <h4 class="text-brand-slate950 text-2xl font-black mb-4">¿Te sientes identificado?</h4>
+                <a href="#contacto" class="bg-brand-slate950 text-white px-6 py-3 rounded-lg font-bold hover:bg-slate-800 transition-all">
+                    Iniciar Auditoría <i class="fa-solid fa-chevron-right ml-2 text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="metodo" class="py-32 bg-brand-slate950 overflow-hidden relative">
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-brand-gold/5 blur-[100px] -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-brand-gold uppercase tracking-[.3em] font-bold text-sm mb-4">El Analgésico Estratégico</h2>
+                    <h3 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight">Framework de Arquitectura de Escala</h3>
+                    <p class="mt-8 text-slate-400 text-lg">No usamos soluciones genéricas. Aplicamos una metodología de 4 etapas que combina el rigor del sector público con la agilidad competitiva del privado.</p>
+                    
+                    <div class="mt-12 space-y-8">
+                        <div class="flex space-x-6">
+                            <span class="text-4xl font-black text-white/10 shrink-0">01</span>
+                            <div>
+                                <h5 class="text-xl font-bold text-white">Auditoría Multivariable</h5>
+                                <p class="text-slate-400 mt-2 text-sm">Escaneamos el ADN de tu negocio buscando cuellos de botella operativos y fugas de capital estructural.</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-6">
+                            <span class="text-4xl font-black text-white/10 shrink-0">02</span>
+                            <div>
+                                <h5 class="text-xl font-bold text-white">Hoja de Ruta de Blindaje</h5>
+                                <p class="text-slate-400 mt-2 text-sm">Diseño de protocolos administrativos y legales para proteger el activo y liberar al dueño de la micro-gestión.</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-6">
+                            <span class="text-4xl font-black text-white/10 shrink-0">03</span>
+                            <div>
+                                <h5 class="text-xl font-bold text-white">Arquitectura Replicable</h5>
+                                <p class="text-slate-400 mt-2 text-sm">Creación de sistemas de procesos (Playbooks) que permitan delegar con control absoluto y predictibilidad.</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-6">
+                            <span class="text-4xl font-black text-white/10 shrink-0">04</span>
+                            <div>
+                                <h5 class="text-xl font-bold text-white">Despliegue de Sistemas</h5>
+                                <p class="text-slate-400 mt-2 text-sm">Implementación guiada de herramientas de seguimiento y KPIs que eliminan la ceguera de gestión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass p-2 rounded-3xl border-white/5">
+                    <div class="bg-brand-slate900 rounded-[22px] p-8 lg:p-12 relative overflow-hidden">
+                        <div class="absolute -top-24 -right-24 w-64 h-64 bg-brand-gold/10 rounded-full blur-[80px]"></div>
+                        <h4 class="text-2xl font-bold text-white mb-6">Mentalidad de Solución</h4>
+                        <div class="space-y-6">
+                            <p class="text-slate-300 italic">"Mi enfoque no es motivacional. Mi enfoque es técnico y arquitectónico. El desorden no se cura con actitud, se cura con sistemas diseñados para la inercia."</p>
+                            <div class="h-[1px] bg-white/10"></div>
+                            <ul class="space-y-4">
+                                <li class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="text-sm">Pensamiento Crítico Multivariable</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="text-sm">Independencia de Servicios Operativos</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <span class="text-sm">Enfoque en Activos de Alto Valor</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Beta Offer -->
+    <section id="oferta" class="py-32 bg-brand-slate900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="glass rounded-[40px] overflow-hidden grid lg:grid-cols-5 border border-brand-gold/20 shadow-2xl">
+                <!-- Content -->
+                <div class="lg:col-span-3 p-8 lg:p-16 space-y-8">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-4 py-1 bg-brand-gold text-brand-slate950 text-xs font-black uppercase rounded-full">Oferta Beta 1x1</span>
+                        <span class="text-brand-gold font-bold text-sm tracking-widest uppercase">Scale Foundations</span>
+                    </div>
+                    <h3 class="text-4xl lg:text-5xl font-black text-white italic">Planos Empresariales para el Crecimiento.</h3>
+                    <p class="text-slate-400 text-lg">Programa intensivo de 8 semanas donde diseñamos mano a mano la arquitectura estratégica de tu negocio. No es consultoría de gestión de redes, es diseño de sistemas de alto impacto.</p>
+                    
+                    <ul class="grid md:grid-cols-2 gap-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                            <span class="text-sm text-slate-300">Auditoría profunda de 360°</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                            <span class="text-sm text-slate-300">Manual de Procedimientos Críticos</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                            <span class="text-sm text-slate-300">Dashboard de Mando Sistémico</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-brand-gold mt-1"></i>
+                            <span class="text-sm text-slate-300">Estrategia de Blindaje Administrativo</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="bg-brand-slate950/50 p-6 rounded-2xl border border-white/5">
+                        <p class="text-xs text-slate-500 uppercase font-bold mb-2">Nota Importante:</p>
+                        <p class="text-xs text-slate-400 leading-relaxed italic">Este programa se enfoca estrictamente en arquitectura estratégica. No incluye asesoría legal directa (aunque entregamos directrices para tu abogado) ni producción de contenido audiovisual.</p>
+                    </div>
+                </div>
+                
+                <!-- Price Card -->
+                <div class="lg:col-span-2 bg-brand-gold p-8 lg:p-16 flex flex-col justify-center items-center text-center">
+                    <p class="text-brand-slate950 font-bold uppercase tracking-widest mb-4">Inversión Lanzamiento Beta</p>
+                    <div class="flex items-baseline mb-2">
+                        <span class="text-4xl font-bold text-brand-slate950 tracking-tighter">$</span>
+                        <span class="text-8xl font-black text-brand-slate950 tracking-tighter">597</span>
+                        <span class="text-2xl font-bold text-brand-slate950">USD</span>
+                    </div>
+                    <p class="text-brand-slate900/80 font-medium mb-10 italic">Solo 5 cupos disponibles para esta ronda</p>
+                    
+                    <a href="#contacto" class="w-full bg-brand-slate950 text-white py-5 rounded-2xl text-xl font-black hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-xl">
+                        Reservar mi Auditoría
+                    </a>
+                    
+                    <div class="mt-8 flex items-center space-x-2 text-brand-slate950 font-bold text-sm">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Acceso Directo con Gregory Garro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contacto" class="pt-32 pb-12 bg-brand-slate950">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-6">¿Tu negocio está listo para el siguiente nivel de rigor?</h2>
+                <p class="text-slate-400 mb-8">No trabajo con todo el mundo. Solo con dueños de negocios maduros que han entendido que el esfuerzo individual tiene un límite, y que el sistema es lo único que escala.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full glass flex items-center justify-center text-brand-gold">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span class="text-slate-300">contacto@gregorygarro.com</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full glass flex items-center justify-center text-brand-gold">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="text-slate-300">San José, Costa Rica | Remoto Global</span>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="glass p-8 rounded-3xl space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-slate-500 mb-2">Nombre Completo</label>
+                        <input type="text" class="w-full bg-brand-slate950/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white" placeholder="Ej. Javier Pérez">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-slate-500 mb-2">Empresa / Sector</label>
+                        <input type="text" class="w-full bg-brand-slate950/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white" placeholder="Ej. Logística Inversa">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase font-bold text-slate-500 mb-2">Correo Corporativo</label>
+                    <input type="email" class="w-full bg-brand-slate950/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white" placeholder="javier@empresa.com">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase font-bold text-slate-500 mb-2">Principal Bloqueo Actual</label>
+                    <textarea rows="4" class="w-full bg-brand-slate950/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white" placeholder="Describe brevemente por qué tu negocio no está escalando..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-brand-gold text-brand-slate950 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all">
+                    Solicitar Diagnóstico
+                </button>
+            </form>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 mt-32 pt-8 border-t border-white/5 flex flex-col md:row-span-1 md:flex-row justify-between items-center text-slate-500 text-xs">
+            <p>&copy; 2024 GREGORY GARRO | Scale Architect. Todos los derechos reservados.</p>
+            <div class="mt-4 md:mt-0 space-x-6">
+                <a href="#" class="hover:text-white transition-colors">Términos</a>
+                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
